@@ -54,15 +54,22 @@ h1 {
 .task {
     background-color: #c1502e;
     text-align: left;
-    margin: 4px 0;
+    margin: 10px;
     padding-left: 8px;
+    margin-left: 0px;
+    margin-right: 0px;
+        border-radius: 5px;
+
 }
 
 .task.completed {
     text-decoration: line-through;
+    box-shadow: 5px 10px;
+    background-color: #587e76;
 }
 
 form {
+    margin-top: 10px;
     display: flex;
     justify-content: space-between;
 }
@@ -70,13 +77,15 @@ form {
 form>input {
     background-color: #a96e5b;
     border: 0;
-    padding: 6px 0;
+    padding: 6px 0 6px 6px;
     font-size: 1rem;
     width: 240px;
     outline: 0;
     color: white;
-    border-bottom: 1px solid #587e76;
+    border-bottom: 3px solid #587e76;
     margin-right: 8px;
+    border-radius: 5px;
+
 }
 
 button {
@@ -85,6 +94,7 @@ button {
     color: black;
     font-size: 16px;
     padding: 6px 14px;
+    border-radius: 5px;
 }
 
 input::placeholder {

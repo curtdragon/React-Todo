@@ -2,13 +2,13 @@ import React from "react";
 
 function Task(props) {
 
-    const clickHandler = () => {
+    const addclickHandler = () => {
         props.toggleTask(props.todoItem.id);
     };
     return (
         <div
             className={`task${props.todoItem.completed ? " completed" : ""}`}
-            onClick={clickHandler}
+            onClick={addclickHandler}
         >
             <p>{props.todoItem.task}</p>
         </div>
