@@ -1,3 +1,6 @@
+[![Netlify Status](https://api.netlify.com/api/v1/badges/456c76d5-b418-4d8c-ac04-0c41f671494e/deploy-status)](https://app.netlify.com/sites/curtislambdatodo/deploys)
+
+
 # React-Todo
 
 - At this point you have become familiar with the DOM and have built out User Interfaces using HTML and CSS and some JavaScript using custom components. And you've even had some practice working with React at a basic level. Now we're going to start adding some functionality to that work-flow. It's one thing to be able to build UI components using react, but what about the interactivity of those components?
@@ -67,4 +70,3 @@
 - **Hosting** Create a [Netlify Account](https://www.netlify.com/) and follow the tutorial on how to host your shiny new todo app on the world wide web.
 
 
-[![Netlify Status](https://api.netlify.com/api/v1/badges/456c76d5-b418-4d8c-ac04-0c41f671494e/deploy-status)](https://app.netlify.com/sites/curtislambdatodo/deploys)
