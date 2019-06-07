@@ -18,6 +18,8 @@ class TodoForm extends React.Component {
         this.setState({ listItem: "" });
     };
 
+    
+
     render() {
         return (
             <form onSubmit={this.submitHandler}>
@@ -29,7 +31,6 @@ class TodoForm extends React.Component {
                 />
                 <button>Add Todo</button>
                 <button>Clear Completed</button>
-
             </form>
         );
     }

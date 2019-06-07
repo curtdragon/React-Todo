@@ -65,3 +65,6 @@
 - **Search Functionality** Add a input bar that allows you to search through your tasks and only show the ones that match the search input.
 
 - **Hosting** Create a [Netlify Account](https://www.netlify.com/) and follow the tutorial on how to host your shiny new todo app on the world wide web.
+
+
+[![Netlify Status](https://api.netlify.com/api/v1/badges/456c76d5-b418-4d8c-ac04-0c41f671494e/deploy-status)](https://app.netlify.com/sites/curtislambdatodo/deploys)
