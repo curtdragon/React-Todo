@@ -52,6 +52,12 @@ class App extends React.Component {
     this.setState({ currentTodo: newList });
   };
 
+  clearTask = id => {
+    id.preventDefault();
+    const newList = this.state.currentTodo.filter(todo => !todo.completed);
+    this.setState({ currentTodo: newList });
+  };
+
   render() {
     return (
       <div className="App">
@@ -62,7 +68,10 @@ class App extends React.Component {
           todos={this.state.currentTodo}
           toggleTask={this.toggleTask}
         />
-        <TodoForm addNewItem={this.addTask} />
+        <TodoForm 
+          addNewItem={this.addTask} 
+          clearTodoTask={this.clearTask}
+        />
       </div>
     );
   }

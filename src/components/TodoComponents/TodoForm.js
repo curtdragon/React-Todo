@@ -17,21 +17,19 @@ class TodoForm extends React.Component {
         this.props.addNewItem(this.state.listItem);
         this.setState({ listItem: "" });
     };
-
-    
-
+ 
     render() {
         return (
-            <form onSubmit={this.submitHandler}>
-                <input
-                    value={this.state.listItem}
-                    placeholder="New Item"
-                    type="text"
-                    onChange={this.changeHandler}
-                />
-                <button>Add Todo</button>
-                <button>Clear Completed</button>
-            </form>
+                <form onSubmit={this.submitHandler}>
+                    <input
+                        value={this.state.listItem}
+                        placeholder="New Item"
+                        type="text"
+                        onChange={this.changeHandler}
+                    />
+                    <button>Add Todo</button>
+                    <button onClick={this.props.clearTodoTask}>Clear Completed</button>
+                </form>
         );
     }
 }
