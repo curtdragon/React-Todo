@@ -1,7 +1,7 @@
-import React from 'react';
+import React from "react";
 import TodoList from "./components/TodoComponents/TodoList";
 import TodoForm from "./components/TodoComponents/TodoForm";
-import "./components/TodoComponents/Todo.css"
+import "./components/TodoComponents/Todo.css";
 
 const todos = [
   {
@@ -64,14 +64,8 @@ class App extends React.Component {
         <div className="header">
           <h1>Todo List</h1>
         </div>
-        <TodoList
-          todos={this.state.currentTodo}
-          toggleTask={this.toggleTask}
-        />
-        <TodoForm 
-          addNewItem={this.addTask} 
-          clearTodoTask={this.clearTask}
-        />
+        <TodoList todos={this.state.currentTodo} toggleTask={this.toggleTask} />
+        <TodoForm addNewItem={this.addTask} clearTodoTask={this.clearTask} />
       </div>
     );
   }

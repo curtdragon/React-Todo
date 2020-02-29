@@ -1,18 +1,25 @@
-import React from "react";
+import React, { useState } from "react";
+import cn from "classnames";
 
 function Task(props) {
+  const { todoItem, toggleTask } = props;
+  const [dateCompleted, setDateCompleted] = useState(null);
 
-    const addclickHandler = () => {
-        props.toggleTask(props.todoItem.id);
-    };
-    return (
-        <div
-            className={`task${props.todoItem.completed ? " completed" : ""}`}
-            onClick={addclickHandler}
-        >
-            <p>{props.todoItem.task}</p>
-        </div>
-    );
+  const addclickHandler = () => {
+    setDateCompleted(Date.now());
+    toggleTask(todoItem.id);
+  };
+
+  const todoClassName = cn("task", {
+    completed: todoItem.completed
+  });
+
+  return (
+    <div className={todoClassName} onClick={addclickHandler}>
+      <p>{todoItem.task}</p>
+      {dateCompleted && <p>Completed at: {dateCompleted}</p>}
+    </div>
+  );
 }
 
 export default Task;
