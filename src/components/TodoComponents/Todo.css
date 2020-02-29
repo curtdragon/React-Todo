@@ -67,13 +67,13 @@ h1 {
     background-color: #587e76;
 }
 
-form {
+.todoform {
     margin-top: 10px;
     display: flex;
     justify-content: space-between;
 }
 
-form>input {
+.todoform>input {
     background-color: #a96e5b;
     border: 0;
     padding: 6px 0 6px 6px;
@@ -88,9 +88,9 @@ form>input {
 }
 
 button {
-    background-color: #c1502e;
+    background-color: black;
     border: 1px solid #c1502e;
-    color: black;
+    color: yellow;
     font-size: 16px;
     padding: 6px 14px;
     border-radius: 5px;
