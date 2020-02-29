@@ -17,7 +17,9 @@ function Task(props) {
   return (
     <div className={todoClassName} onClick={addclickHandler}>
       <p>{todoItem.task}</p>
-      {dateCompleted && <p>Completed at: {dateCompleted}</p>}
+      {todoItem.completed && dateCompleted && (
+        <p>Completed at: {dateCompleted}</p>
+      )}
     </div>
   );
 }
